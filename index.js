@@ -22,3 +22,13 @@ window.onscroll = () => {
     menu.classList.remove('bx-x');
     navlist.classList.remove('open');
 };
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register("sw.js").then(registration => {
+        console.log("SW Registered!");
+        console.log(registration);
+    }).catch(error =>{
+        console.log("SW Registration failed")
+        console.log(error);
+    });
+}
