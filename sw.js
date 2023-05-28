@@ -1,3 +1,3 @@
 self.addEventListener("install", e => {
-    console.log("Install!");
+    console.log("Install towbbie!");
 })
