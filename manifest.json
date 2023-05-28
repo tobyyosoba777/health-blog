@@ -1,10 +1,11 @@
 {
     "short_name": "Health Blog",
-    "name": "Tobi's Health Blog: Physical And Mental Health",
+    "name": "Towbbie Health Blog",
     "start_url": "./index.html",
     "id": "/?source=pwa",
     "description": "Health",
     "display": "standalone",
+    "orientation": "portrait",
     "scope": "/",
     "icons": [
       {
@@ -24,4 +25,3 @@
       }
     ]
   }
-  
