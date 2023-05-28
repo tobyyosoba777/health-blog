@@ -1,0 +1,25 @@
+{
+    "name": "Towbbie Health Blog",
+    "short_name": "Towbbie Health Blog",
+    "start_url": ".",
+    "background_color": "#fff",
+    "theme_color": "#ff0241",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "./icons/icons8-heart-flaticons-lineal-color-16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "./icons/icons8-heart-flaticons-lineal-color-32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icons8-heart-flaticons-lineal-color-96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        }
+    ]
+}
