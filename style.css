@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta+Malar:300,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --text-color: #000;
+    --bg-color: #e5e5e5;
+    --main-color: #ff0000;
+    --second-color: #fff;
+    --third-color: #fff;
+    --other-color: #868686;
+    --depression-container-color: #fff;
+    --nav-text : #fff;
+    --big-font: 5.5rem;
+    --p-font: 1rem;
+    --container1-color: linear-gradient(to top, rgba(255, 255, 255, 0.719)50%,rgba(255, 255, 255, 0.568)50%), url(images/undraw_energizer_re_vhjv.svg);
+    --container2-color: linear-gradient(to top, rgba(255, 255, 255, 0.719)50%,rgba(255, 255, 255, 0.568)50%), url(images/undraw_raining_re_4b55.svg);
+    --container3-color: linear-gradient(to top, rgba(255, 255, 255, 0.719)50%,rgba(255, 255, 255, 0.568)50%), url(images/undraw_meditation_re_gll0.svg);
+    --container4-color: linear-gradient(to top, rgba(255, 255, 255, 0.719)50%,rgba(255, 255, 255, 0.568)50%), url(./images/undraw_healthy_options_re_lf9l.svg);
+    --container5-color: linear-gradient(to top, rgba(255, 255, 255, 0.719)50%,rgba(255, 255, 255, 0.568)50%), url(./images/undraw_personal_trainer_re_cnua.svg);
+    --container6-color: linear-gradient(to top, rgba(255, 255, 255, 0.719)50%,rgba(255, 255, 255, 0.568)50%), url(./images/undraw_staying_in_i-80-u.svg);
+}
+
+body {
+    background-color: #eeeeee;
+    /* min-height: 200vh; */
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.nav {
+    display: flex;
+    padding: 1.5rem 1.7rem;
+    /* background-color: var(--second-color); */
+    background: rgba(255, 255, 255, 0.40);
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.192);
+    backdrop-filter: blur(6px);
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.header {
+    margin-right: 5rem;
+}
+
+.header header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header header img {
+    /* height: 42px; */
+    width: 290px;
+}
+
+header i {
+    font-size: 2em;
+    background-color: rgb(255, 231, 231);
+    color: rgb(255, 0, 0);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+header h2 {
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 2.1em;
+    color: var(--text-color);
+}
+
+.navlist {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.navlist a {
+    font-size: 1rem;
+    font-family: 'Jaldi', sans-serif;
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 0 10px;
+    transition: all ease .55s;
+}
+
+.navlist a::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff3f3f;
+    transition: all .5s;
+}
+
+.navlist a:hover::after {
+    width: 70%;
+}
+
+/* .navlist a:hover {
+    color: var(--main-color);
+} */
+
+.misc {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    /* padding: 1rem; */
+    /* background-color: #e2e2e2; */
+}
+
+.misc:hover {
+    /* background-color: rgb(209, 209, 209); */
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    margin: 15px;
+    display: none;
+}
+
+.ri-moon-fill {
+    color: rgb(226, 0, 226);
+    /* color: rgb(146, 0, 146); */
+    cursor: pointer;
+}
+
+.ri-sun-fill {
+    /* color: #ff5e00; */
+    color: #fbff00;
+    cursor: pointer;
+}
+
+
+.start {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+}
+
+.start img {
+    width: 100%;
+    height: 80vh;
+}
+
+.start h2 {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 1.9em;
+    margin-top: 2rem;
+    color: var(--text-color);
+    color: rgba(255, 33, 33, 0.952);
+}
+
+.start p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+
+
+
+.container div {
+    height: 650px;
+    width: 350px;
+    margin: 10px;
+    border-radius: 60px;
+    background: var(--second-color);
+    color: var(--text-color);
+    padding: 1rem;
+    box-shadow:  5px 5px 7px #8d8d8d,
+             -5px -5px 7px #ffffff;
+}
+
+.container div p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container div:hover {
+    transform: translateY(-20px);
+    transition: .3s ease-out;
+}
+.container .content1 {
+    background: var(--container1-color);
+    background-position: center;
+    background-size: cover;
+}
+.container .content2 {
+    background: var(--container2-color);
+    background-position: center;
+    background-size: cover;
+}
+.container .content3 {
+    background: var(--container3-color);
+    background-position: center;
+    background-size: cover;
+}
+.container .content4 {
+    background: var(--container4-color);
+    background-position: center;
+    background-size: cover;
+}
+.container .content5 {
+    background: var(--container5-color);
+    background-position: center;
+    background-size: cover;
+}
+.container .content6 {
+    background: var(--container6-color);
+    background-position: center;
+    background-size: cover;
+}
+
+.container .content1, .content2, .content3 h4 {
+    color: var(--text-color);
+
+}
+
+.note {
+    color: var(--text-color);
+    margin-bottom: 50px ;
+}
+
+.mentalhealth .definition {
+    background: var(--third-color);
+}
+
+.mentalhealth header {
+    font-size: 2em;
+    color: #ff0000;
+}
+
+
+
+.mentalhealth p {
+    /* columns: 5 500px; */
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    border-radius: 20px;
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+    margin: 0 auto;
+    margin: 3rem 0;
+}
+
+.mentalhealth .depression {
+    background: var(--depression-container-color);
+    box-shadow:  5px 5px 22px #6e6e6e,
+             -5px -5px 22px #ffffff;
+
+    padding: 5vh;
+    /* background-color: var(--third-color); */
+    width: 90%;
+    margin: 2rem auto 2rem;
+    box-shadow: 4rem 2.9em 4em rgba(black, .3);
+    border-radius: 0.3em;
+}
+
+.mentalhealth .depression h1 {
+    color: var(--text-color);
+    font-family: 'Mukta Malar', sans-serif;
+}
+
+.mentalhealth .depression img {
+    float: left;
+    margin-right: 1em;
+}
+
+.mentalhealth .depression p {
+    color: var(--text-color);
+    letter-spacing: 0.02em;
+    word-spacing: 0.2em;
+    line-height: 1.7;
+}
+
+.mentalhealth .depression .d {
+    font-size: 1.7em;
+}
+
+.mentalhealth .depression .rest {
+    font-size: 1.4em;
+}
+
+.mentalhealth section {
+    background: var(--bg-color);
+    /* columns: 3 240px; */
+    column-rule: #333 2px solid;
+    padding: 0.1rem;
+    transition: all .5s ease-in-out;
+}
+
+.mentalhealth section .quote {
+    font-weight: 600;
+    font-style: italic;
+    border-bottom: #000 1px solid;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.container1, .container2 {
+    /* height: 100vh; */
+    columns: 3 200px;
+    column-gap: 2rem;
+    column-rule: 1.5px solid #333;
+    /* margin: 5rem 0; */
+    padding: 7rem 0;
+    font-family: "Poppins", sans-serif;
+    transition: all .5s ease-in-out;
+}
+
+.container1 span {
+    display: inline-block;
+    column-span: all;
+    font-size: 1.2rem;
+    color: red;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 100%;
+    padding: 0.5em;
+}
+
+.container2 span {
+    display: inline-block;
+    column-span: all;
+    font-size: 1.2rem;
+    color: red;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 100%;
+    padding: 0.5em;
+}
+
+.container1, .container2 p {
+    font-size: 1.2rem;
+    margin-bottom: 1.7rem;
+    color: var(--text-color);
+}
+
+.container1, .container2 .top {
+    margin: 0 0 1.7rem;
+}
+
+body.dark {
+    --text-color: #fff;
+    --bg-color: #08162a;
+    /* --second-color: #10233f; */
+    --second-color: #19103f;
+    /* --second-color: #2b3544; */
+    --third-color: #1f1f1f;
+    background-color: #181818;
+    --nav-text : #000;
+    --depression-container-color: #19103f;
+    --container1-color: linear-gradient(to top, #2f00ff17 50%,#2f00ff1c 50%), url(images/undraw_energizer_re_vhjv.svg);
+    --container2-color: linear-gradient(to top, #2f00ff17 50%,#2f00ff1c 50%), url(images/undraw_raining_re_4b55.svg);
+    --container3-color: linear-gradient(to top, #2f00ff17 50%,#2f00ff1c 50%), url(images/undraw_meditation_re_gll0.svg);
+    --container4-color: linear-gradient(to top, #2f00ff17 50%,#2f00ff1c 50%), url(images/undraw_healthy_options_re_lf9l.svg);
+    --container5-color: linear-gradient(to top, #2f00ff17 50%,#2f00ff1c 50%), url(images/undraw_personal_trainer_re_cnua.svg);
+    --container6-color: linear-gradient(to top, #2f00ff17 50%,#2f00ff1c 50%), url(images/undraw_staying_in_i-80-u.svg);
+    transition: all .4s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    background-color: #0c0b09;
+    padding: 70px 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.col {
+    width: 25%;
+    padding: 0 30px;
+}
+
+.col h4 {
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 25px;
+    position: relative;
+}
+.col h4::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 40px;
+    left: 0;
+    bottom: -5px;
+    background-color: #cca45d;
+}
+
+.col ul li:not(last-child) {
+    margin-bottom: 15px;
+}
+
+.col ul li a {
+    color: #9897a9;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    display: block;
+    transition: .4s;
+}
+
+.col ul li a:hover {
+    color: #fff;
+    transform: translateX(-10px);
+}
+
+.col .social a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #cca45d;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 12px 12px 0;
+    color: #fff;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.col .social a:hover {
+    transform: scale(1.2);
+    color: #000;
+    background-color: #fff;
+}
+
+
+
+
+.ending {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 3rem;
+    height: 300px;
+    width: 300px;
+    border-radius: 160px;
+}
+
+
+
+
+@media screen and (max-width:1250px) {
+    .nav {
+        padding: 0.8rem 0.9rem;
+    }
+    .header header img {
+        /* height: 42px; */
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    .nav {
+        padding: 0.8rem 1.1rem;
+    }
+
+    header h2 {
+        font-size: 1.4em;
+    }
+    .header {
+        margin-right: 12px;
+    }
+
+    .header header img {
+        /* height: 42px; */
+        width: 210px;
+    }
+
+    .misc div {
+        font-size: 1.29rem;
+    }
+    .misc {
+        /* font-size: 1rem; */
+    }
+
+    .mentalhealth header {
+        font-size: 1.6em;
+    }
+
+    .mentalhealth .depression {
+        padding: 1vw;
+        /* background-color: var(--third-color); */
+        width: 90%;
+        margin: 2rem auto 2rem;
+        box-shadow: 4rem 2.9em 4em rgba(black, .3);
+        border-radius: 0.3em;
+    }
+
+    .container1, .container2 p {
+        font-size: 1rem;
+        color: var(--text-color);
+    }
+    .start {
+        /* height: 100vh; */
+    }
+    .start p {
+        font-size: 1.15rem;
+    }
+    .start h2 {
+        font-size: 1.4em;
+    }
+    .start img {
+        height: 55vh;
+    }
+
+    #menu-icon {
+        display: initial;
+    }
+    .navlist {
+        position: absolute;
+        top: -700px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: all ease .55s;
+        text-align: left;
+    }
+    .navlist a {
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0.1rem 0.1rem;
+        color: #fff;
+    }
+    .navlist.open {
+        top: 100%;
+    }
+}
+
+@media screen and (max-width:775px) {
+    .col {
+        width: 50%;
+        margin-bottom: 25px;
+
+    }
+}
+
+@media screen and (max-width:575px) {
+    .col {
+        width: 100%;
+    }
+}

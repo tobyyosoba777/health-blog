@@ -1,0 +1,26 @@
+{
+    "short_name": "Health Blog",
+    "name": "Tobi's Health Blog: Physical And Mental Health",
+    "start_url": "./index.html",
+    "id": "/?source=pwa",
+    "description": "Health",
+    "display": "standalone",
+    "scope": "/",
+    "icons": [
+      {
+        "src": "/icons/icons8-heart-flaticons-lineal-color-16.png",
+        "type": "image/png",
+        "sizes": "16x16"
+      },
+      {
+        "src": "/icons/icons8-heart-flaticons-lineal-color-32.png",
+        "type": "image/png",
+        "sizes": "32x32"
+      },
+      {
+        "src": "/icons/icons8-heart-flatart-icons-flat-96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      }
+    ]
+  }
