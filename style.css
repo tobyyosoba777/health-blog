@@ -127,9 +127,9 @@ header h2 {
     /* background-color: #e2e2e2; */
 }
 
-.misc:hover {
-    /* background-color: rgb(209, 209, 209); */
-}
+/* .misc:hover {
+    background-color: rgb(209, 209, 209);
+} */
 
 #menu-icon {
     font-size: 35px;
@@ -554,9 +554,9 @@ ul {
         font-size: 1rem;
         color: var(--text-color);
     }
-    .start {
-        /* height: 100vh; */
-    }
+    /* .start {
+        height: 100vh;
+    } */
     .start p {
         font-size: 1.15rem;
     }
