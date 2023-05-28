@@ -7,19 +7,14 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "./icons/icons8-heart-flaticons-lineal-color-16.png",
-            "sizes": "16x16",
-            "type": "image/png"
-        },
-        {
-            "src": "./icons/icons8-heart-flaticons-lineal-color-32.png",
-            "sizes": "32x32",
-            "type": "image/png"
-        },
-        {
-            "src": "/icons/icons8-heart-flaticons-lineal-color-96.png",
+            "src": "/icon/android-chrome-192x192.png",
             "type": "image/png",
-            "sizes": "96x96"
+            "sizes": "192x192"
+        },
+        {
+            "src": "./icon/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
         }
     ]
 }
