@@ -7,14 +7,14 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "/icon/icon-192x192.png",
-            "type": "image/png",
-            "sizes": "192x192"
+            "src": "/icon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
         },
         {
-            "src": "./icon/icon-512x512.png",
-            "type": "image/png",
-            "sizes": "512x512"
+            "src": "/icon/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
         }
     ]
 }
